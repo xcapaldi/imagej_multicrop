@@ -21,7 +21,22 @@ stringy = string4[2].split("=")[1]
 stringw = string4[3].split("=")[1]
 stringh = string4[4].split("=")[1]
 
-print(string5)
+print(int(stringx))
+
+cropcoords = []
+# export ROIs as array
+roistrings = rm.getRoisAsArray()
+# convert to arrays with integers and the form [[x,y,w,h],[x,y,w,h]]
+numrois = rm.getCount()
+for r in range(numrois):
+	cropcoords.append([])
+	string1 = str(roistrings[r])
+	string2 = string1.split("[")[1].split("]")
+	string3 = string2[0].split(",")
+	for c in range(4):
+		cropcoords[r].append(int(string3[c + 1].split("=")[1]))
+
+print(cropcoords)
 #print(stringx)
 #print(stringy)
 #print(stringw)
