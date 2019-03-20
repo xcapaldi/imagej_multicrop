@@ -24,7 +24,7 @@ This plugin takes a tif stack and displays the Z-projection (max). It then enabl
 ROI manager which allows you to draw and add multiple rectangular regions of interest.
 These can be added, modified and deleted manually in the ROI manager.
 
-# multi-crop
+## multi-crop
 
 This plugin takes the open ROIs in the ROI manager and applies them to any number of
 original datasets that you've selected. Those stacks are then automatically cropped
@@ -36,7 +36,7 @@ this process.
 
 ## Installation
 
-In Gnu/Linux and Windows, place the noise_subtract.py file inside the Fiji.app/plugins
+In Gnu/Linux and Windows, place the files inside the Fiji.app/plugins
 folder (or any subfolder). In MacOSX go to the "Applications" folder in Finder,
 right-click on the Fiji icon and select "Show package contents" to find the plugins
 folder.
